@@ -19,7 +19,7 @@ curl --header "Content-Type: application/json" --request POST http://host:port/g
 Response:
 HTTP code: 201
 
-Response Body: { "id": "1234", "uri": "http://host:port/games/1234" }
+Response Body: { "id": "1234", "uri": "http://<host>:<port>/games/1234" }
 
 id: unique identifier of a game
 
@@ -36,7 +36,7 @@ pitId: id of the pit selected to make a move. Pits are numbered from 1 to 14 whe
 Response: HTTP code: 200
 
 Response Body:
-{"id":"1234","url":"http://host:port/games/1234","status":{"1":"4","2":"4","3":"4","4":"4","5":"4","6":"4","7":"0","8":"4","9":"4","10":"4","11":"4","12":"4","13":"4","14":"0"}}
+{"id":"1234","url":"http://<host>:<port>/games/1234","status":{"1":"4","2":"4","3":"4","4":"4","5":"4","6":"4","7":"0","8":"4","9":"4","10":"4","11":"4","12":"4","13":"4","14":"0"}}
 
 status: json object key-value, where key is the pitId and value is the number of stones in the pit
 
