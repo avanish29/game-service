@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: kalah-game
+    
+logging:
+  file:
+    name: logs/kalah-game.log
+
+server:
+  port: 8080  
